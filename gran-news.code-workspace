@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "app_gran_news"
+		},
+		{
+			"path": "lib_gran_auth"
+		},
+		{
+			"path": "lib_gran_core"
+		},
+		{
+			"path": "lib_gran_design"
+		},
+		{
+			"path": "app_gran_news\\modules\\module_eventos"
+		},
+		{
+			"path": "app_gran_news\\modules\\module_noticias"
+		},
+		{
+			"path": "app_gran_news\\modules\\module_splash"
+		}
+	],
+}

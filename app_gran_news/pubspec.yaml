@@ -1,0 +1,69 @@
+name: gran_news
+description: Aplicativo de notícias da Gran Cursos Online
+app_authors:
+  - Marcos Souza @devmrcs
+
+version: 0.0.1+1
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  # ------> Módulos
+  module_splash:
+    path: ./modules/module_splash
+
+  module_eventos:
+    path: ./modules/module_eventos
+
+  module_noticias:
+    path: ./modules/module_noticias
+
+  # ------> Bibliotecas
+  lib_gran_core:
+    path: ../lib_gran_core
+
+  lib_gran_design:
+    path: ../lib_gran_design
+
+  lib_gran_auth:
+    path: ../lib_gran_auth
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: 1.0.2
+
+dev_dependencies:
+  build_runner: 2.1.5
+  mobx_codegen: 2.0.4
+
+  flutter_lints: 1.0.4
+
+  mocktail: 0.2.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  app_run: flutter run -t lib/main.dart --flavor production
+
+  build_apk: flutter build apk --split-per-abi -t lib/main.dart --flavor production
+  build_bundle: flutter build appbundle -t lib/main.dart --flavor production
+
+  mobx: flutter pub run build_runner build
+  mobx_delete: flutter pub run build_runner build --delete-conflicting-outputs
+  mobx_watch: flutter pub run build_runner watch
+  mobx_clean: flutter pub run build_runner clean
+
+  package_outdated: flutter pub outdated
+  test_coverage: flutter test --coverage
+
+  adb_restart_tcp: adb tcpip 5555
+  adb_connect_tcp: adb connect 192.168.100.45:5555

@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "configurations": [
+    {
+      "name": "[DEV] Current Device",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_development.dart",
+      "args": [
+        "--flavor",
+        "development",
+      ]
+    },
+    {
+      "name": "[QA] Current Device",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_qa.dart",
+      "args": [
+        "--flavor",
+        "qa",
+      ]
+    },
+    {
+      "name": "[PROD] Current Device",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor",
+        "production",
+      ]
+    },
+    {
+      "name": "Flutter: Run all Tests",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/",
+    },
+    {
+      "name": "Flutter: Run all Tests of Tag",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/",
+      "args": [
+        "--tags",
+        "datasources"
+      ]
+      // "(datasources || repositories || models || entities || enuns || controllers)",
+    },
+    {
+      "name": "Flutter: Run all Tests (Models Excluded)",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/",
+      "args": [
+        "--exclude-tags",
+        "models"
+      ]
+    }
+  ]
+}
