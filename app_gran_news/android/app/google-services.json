@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "999303605206",
+    "project_id": "gran-news",
+    "storage_bucket": "gran-news.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999303605206:android:12c5bf0e66208dc912d277",
+        "android_client_info": {
+          "package_name": "br.com.grancursosonline.news.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999303605206-qh7ctj81lpu9iqqti9muus7c2jrd7ong.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSRidbIOqKjRWOE5id4poKD8D_1bsBkaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999303605206-qh7ctj81lpu9iqqti9muus7c2jrd7ong.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
